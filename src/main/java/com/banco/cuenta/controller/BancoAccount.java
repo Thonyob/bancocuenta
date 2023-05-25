@@ -19,9 +19,17 @@ public class BancoAccount {
     AccountClientService accountClientService;
 
     @PostMapping
+    public Mono<AccountClient> register(@RequestBody AccountClient accountClient) {
+        return accountClientService.save(accountClient);
+    }
+
+ /*
     public ResponseEntity<Mono<AccountClient>> register(@RequestBody AccountClient accountClient) {
         return new ResponseEntity<>(accountClientService.save(accountClient), HttpStatus.CREATED);
     }
+*/
+
+
 
 }
 

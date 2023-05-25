@@ -7,6 +7,8 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -19,8 +21,9 @@ public class AccountClient {
     private String nroCuenta;
     private AccountType tipoCuenta;
     private Client cliente;
-    private AccountMovement movimientos;
     private float saldo;
+    private List<AccountMovement> movimientos;
+
 
 
 
