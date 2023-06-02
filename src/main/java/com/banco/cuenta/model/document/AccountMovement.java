@@ -12,7 +12,7 @@ import lombok.Setter;
 public class AccountMovement {
 
     private String tipo;
-    private String monto;
+    private float monto;
     private String fecha;
 
 }

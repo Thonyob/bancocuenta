@@ -13,5 +13,6 @@ import lombok.Setter;
 public class Client {
 
     private String idClient;
+    private String nroDocumento;
 
 }
