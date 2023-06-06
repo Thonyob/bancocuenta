@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 public interface AccountClientService {
 
     Flux<AccountClient> getAll();
-    Mono<AccountClient>save(AccountClient accountClient);
+    Maybe<AccountClient>save(AccountClient accountClient);
     Mono<AccountClient>findById(String id);
     Mono<Boolean>existsById(String id);
     Flowable<AccountClient> getClientAccountByNroCuenta(String nroCuenta);
