@@ -19,7 +19,7 @@ public class AccountClient {
     @Id
     private String id;
     private String nroCuenta;
-    private AccountType tipoCuenta;
+    private AccountTypeClient tipoCuenta;
     private Client cliente;
     private float saldo;
     private List<AccountMovement> movimientos;

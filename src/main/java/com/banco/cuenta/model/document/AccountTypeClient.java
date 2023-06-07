@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AccountType {
+public class AccountTypeClient {
 
     private String idAccountType;
     private String AccountName;
